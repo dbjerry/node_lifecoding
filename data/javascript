@@ -1,0 +1,23 @@
+<strong>Template Literal ${name}, ${1 + 1}</strong><br>
+var name = 'jerry';
+<br>
+var letter = `Dear <strong>${name}</strong>,
+<br>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedmaximus orci sit amet eros placerat imperdiet. Nunc mi augue, volutpat vel dapibus nec, consectetur at nulla. <strong>${name}</strong> Suspendisse viverra sit amet estut lacinia. Ut vitae mattis diam. Nunc nec metus id arcu ultrices sagittis. Cras elementum non elit nec vestibulum. Sed pretium ligula quis enim vehicula blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non nisl eget diam convallis vestibulum. <strong>${1 + 1}</strong> Morbi a lectus facilisis, facilisis sem et, aliquet nibh. <strong>${name}</strong>`;
+console.log('letter의 길이 : ' + letter.length);
+<br><br>
+<strong>Object vs Array</strong>
+<br>
+* Object : <br>
+var roles = {<br>
+    'programmer' : 'egoing',<br>
+    'designer' : 'k8805',<br>
+    'manager' : 'hoya'<br>
+}<br>
+console.log(roles.designer); //k8805
+<br>
+<br>
+* Array : <br>
+var members = ['egoing', 'k8805', 'hoya'];<br>
+console.log(members[1]); //k8805
+<br>

@@ -1,0 +1,25 @@
+{
+  "name": "node_lifecoding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbjerry/node_lifecoding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbjerry/node_lifecoding/issues"
+  },
+  "homepage": "https://github.com/dbjerry/node_lifecoding#readme",
+  "dependencies": {
+    "sanitize-html": "^1.20.0"
+  }
+}

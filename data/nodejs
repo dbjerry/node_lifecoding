@@ -1,0 +1,4 @@
+Node.js에서 URL을 통해서 입력된 값을 사용<br>
+URL에 있는 파라미터 <strong>id</strong>에다가 <strong>아무값</strong>이나 넣어봅니다.
+<br><br>
+동기적(synchronous) vs 비동기적(asynchronous)

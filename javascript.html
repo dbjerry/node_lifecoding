@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>Node.js</title>
+    <meta charset = "utf-8">
+</head>
+<link rel="stylesheet" href="css/footer.css">
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1><a href = "index.html">Node.js</a></h1>
+        </div>
+        <div id="container">
+            <ul>
+                <li><a href = "server.html">Server</a></li>
+                <li><a href = "javascript.html">JavaScript</a></li>
+                <li><a href = "node_js.html">Node.js</a></li>
+                <li><a href = "app.html">App</a></li>
+            </ul>
+            <h1>Node.js의 기초적인 JavaScript</h1>
+            <h2>JavaScript의 Data Type(F12 혹은 소스보기)</h2><br>
+            <h3>Number : 숫자형 타입</h3><br>
+            <script>
+                console.log('숫자형타입 : ');
+                console.log(1+1);
+                console.log(3-1);
+                console.log(3*3);
+                console.log(12/3);
+                </script>
+            <h3>String : 문자형 타입 및 Template Literal</h3><br>
+            <script>
+                console.log('문자형타입 : ');
+                console.log('1+1');
+                console.log('1' + '1');
+                var name = 'jerry';
+                //Template Literal ${name}, ${1 + 1} ...
+                var letter = `Dear ${name}
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedmaximus orci sit amet eros placerat imperdiet. Nunc mi augue, volutpat vel dapibus nec, consectetur at nulla. ${name} Suspendisse viverra sit amet estut lacinia. Ut vitae mattis diam. Nunc nec metus id arcu ultrices sagittis. Cras elementum non elit nec vestibulum. Sed pretium ligula quis enim vehicula blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non nisl eget diam convallis vestibulum. ${1 + 1} Morbi a lectus facilisis, facilisis sem et, aliquet nibh. ${name}`;
+                console.log('letter의 길이 : ' + letter.length);
+            </script>
+            <h3>Boolean : 논리형 타입</h3><br>
+            <h3>Array : 배열</h3><br>
+            <h3>Object : 객체</h3><br>
+            
+        </div>
+    </div>
+</body>
+<footer>
+    <div id="footer">
+        <p>
+            Node.js <strong><u>연습</u></strong>을 위한 페이지입니다.<br>
+            해당 페이지는 연습용으로 제작하였으므로<br>
+            자세한 원리가 아닌 Node의 단순 사용법 위주로 작성하였습니다.<br>
+        </p>
+    </div>
+</footer>
+</html>
