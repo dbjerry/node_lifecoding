@@ -13,17 +13,19 @@ var app = http.createServer(function(request, response){
   console.log(_url);
   console.log(pathname);
 
+  // Routing defines the applicaton end point ( URI ),
+  // and how the URI responds to client requests.
   if(pathname === '/'){
     if(queryData.id === undefined){
       fs.readdir('./data', function(error, filelist){
         var title = 'Welcome';
         var description = 'Hello, Node.js!';
         
-        /* data list */
-        //var list = templateList(filelist);
+        // data list
+        // var list = templateList(filelist);
         var list = template.list(filelist);
 
-        /* add css/footer */
+        // add css/footer
         fs.readFile('css/footer', 'utf-8', function(err, footer_desc){
           var footer = footer_desc;
           var html = template.HTML(title, list, `<h2>${title}</h2>${description}`, footer, '<a href="/create">create</a>');
@@ -65,10 +67,10 @@ var app = http.createServer(function(request, response){
       fs.readdir('./data', function(error, filelist){
         var title = 'WEB - create';
         
-        /* data list */
+        // data list
         var list = template.list(filelist);
 
-        /* add css/footer */
+        // add css/footer
         fs.readFile('css/footer', 'utf-8', function(err, footer_desc){
           var footer = footer_desc;
           var html = template.HTML(title, list, `
@@ -101,9 +103,9 @@ var app = http.createServer(function(request, response){
       body += data;
 
       // data의 양이 너무 많으면 접속을 끊어버린다.
-      /* if(body.length > 1e6) {
-        request.connection.destroy;
-      } */
+      //if(body.length > 1e6) {
+      //  request.connection.destroy;
+      //}
     });
     request.on('end', function(){
       var post = querystring.parse(body);
@@ -149,11 +151,6 @@ var app = http.createServer(function(request, response){
     var body = '';
     request.on('data', function(data){
       body += data;
-
-      // data의 양이 너무 많으면 접속을 끊어버린다.
-      /* if(body.length > 1e6) {
-        request.connection.destroy;
-      } */
     });
     request.on('end', function(){
       var post = querystring.parse(body);
@@ -173,11 +170,6 @@ var app = http.createServer(function(request, response){
     var body = '';
     request.on('data', function(data){
       body += data;
-
-      // data의 양이 너무 많으면 접속을 끊어버린다.
-      /* if(body.length > 1e6) {
-        request.connection.destroy;
-      } */
     });
     request.on('end', function(){
       var post = querystring.parse(body);
